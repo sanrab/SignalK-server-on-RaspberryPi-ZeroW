@@ -1,0 +1,12 @@
+Installare RaspiOS Buster
+Rimuovere repository VS Microsoft (sudo rm -f /etc/apt/sources.list.d/vscode.list /etc/apt/trusted.gpg.d/microsoft.gpg)
+sudo apt update
+sudo apt install nodejs npm
+sudo npm install -g npm@latest # aggiornamento npm
+sudo apt install libnss-mdns avahi-utils libavahi-compat-libdnssd-dev
+
+Installazione SignalK server
+
+sudo npm install -g --unsafe-perm signalk-server
+Setup server
+sudo signalk-server-setup
